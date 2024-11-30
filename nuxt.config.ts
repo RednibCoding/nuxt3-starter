@@ -1,8 +1,28 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
+  compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
   devServer: { port: 3005 },
   future: { compatibilityVersion: 4 },
-  modules: ['@nuxtjs/tailwindcss']
-})
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+
+  // For more infos, see: https://i18n.nuxtjs.org/docs/getting-started/usage
+  i18n: {
+    vueI18n: "./i18n/config.ts",
+    lazy: true,
+    defaultLocale: "de", // default locale of the project for Nuxt pages and routings
+    langDir: ".", // use i18n dir as root
+    locales: [
+      {
+        code: "en",
+        language: "en-GB",
+        file: "en.ts",
+      },
+      {
+        code: "de",
+        language: "de-DE",
+        file: "de.ts",
+      },
+    ],
+  },
+});

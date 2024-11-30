@@ -16,7 +16,7 @@
 
 <template>
   <main class="themeLight">
-    <Header />
+    <!-- <Header /> -->
     <div class="bg-theme-page">
       <slot />
     </div>
