@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
-  devServer: { port: 3005 },
+  devServer: { port: 3005 }, // Note: when changing: dont forget to also change the port in the launch.json to make debugging work!
   future: { compatibilityVersion: 4 },
 
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
