@@ -4,11 +4,18 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   devServer: { port: 3005 },
   future: { compatibilityVersion: 4 },
+
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n"],
+
+  sourcemap: {
+    server: true,
+    client: true,
+  },
 
   // For more infos, see: https://i18n.nuxtjs.org/docs/getting-started/usage
   i18n: {
     vueI18n: "./i18n/config.ts",
+    strategy: "prefix_except_default",
     lazy: true,
     defaultLocale: "de", // default locale of the project for Nuxt pages and routings
     langDir: ".", // use i18n dir as root
