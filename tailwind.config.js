@@ -23,6 +23,8 @@ module.exports = {
         "theme-primary-accent": "var(--primary-accent-color)",
         "theme-secondary": "var(--secondary-color)",
         "theme-secondary-accent": "var(--secondary-accent-color)",
+        "theme-interest": "var(--interest-color)",
+        "theme-interest-accent": "var(--interest-accent-color)",
         "theme-page-primary": "var(--page-primary-color)",
         "theme-page-secondary": "var(--page-secondary-color)",
         "theme-default": "var(--text-default-color)",
